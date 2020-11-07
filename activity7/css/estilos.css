@@ -1,0 +1,157 @@
+/*-------------- activity 7 -------------*/
+
+body{
+    font-family: sans-serif;
+    max-width:80%;  
+    margin: 0 auto;    
+}
+
+section{
+    max-width: 77%;
+    margin: 0 auto;
+}
+
+/*-------------- header -------------*/
+.flexcontainer0{
+    display: flexbox;
+    background: rgb(224, 231, 231);
+    height: 200px;
+    color: rgb(31, 30, 30);
+}
+
+h1 {
+    font-size: 3em;
+    padding-top: 1em;
+    margin: 20px;
+}
+
+p{
+    margin-left: 1em;
+}
+
+/*-------------- Secction 1 -------------*/
+h2{
+    text-align: center;
+}
+
+h3{
+    margin-left: 1em;
+}
+
+img{
+   max-width: 255px;  
+}
+
+#flexcontainer1{
+    display:flex;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: space-around;
+    border-radius: 3px;
+}
+
+#flexcontainer1 .item{
+   height: 400px;
+   border: solid 1px rgb(224, 231, 231);
+   flex-basis: 0; 
+}
+
+#flexcontainer1 .item p{
+      height: 40px;    
+}
+
+#flexcontainer1 input{
+    width: 80px;
+    height: 35px;
+    margin-left: 1em;
+    color: white;
+    border-radius: 5px;
+    border-color: transparent;
+    text-decoration: 0;
+    background:#207cca;    
+}
+
+h4{
+    font-size: 1.5em;  
+}
+/*-------------- Secction 2 -------------*/
+
+#flexcontainer2 {
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+#flexcontainer2 .item{
+    margin-top: 15px;
+}
+#flexcontainer2 .item:nth-child(1){
+    width: 50%;     
+}
+
+#flexcontainer2 .item:nth-child(1) input{
+    width:100%;  
+}
+
+#flexcontainer2 .item:nth-child(2) {
+    width: 46%;
+    margin-left: 32px; 
+}
+
+#flexcontainer2 #username{
+    width: 89%;
+}
+
+#flexcontainer2 .item:nth-last-child(-n+2){
+    width: 100%; 
+}
+
+#flexcontainer2 .item:nth-last-child(-n+2) input{
+    width: 100%;
+}
+#flexcontainer2 input{
+    border: solid 1px rgb(224, 231, 231);
+    color: rgb(9, 124, 139);
+    height: 25px;  
+    margin-top: 5px;   
+}
+
+#flexcontainer2 label{
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+#flexcontainer2 .item:last-child input{
+    height: 35px;
+    color: white;
+    border-radius: 3px;
+    border-color: transparent;
+    text-decoration: 0;
+    background: #207cca; 
+    font-size: 15px;  
+}
+    
+/*-------------- movil -------------*/
+
+@media only screen and (max-width: 600px){
+   #flexcontainer2 .item:nth-child(1) {
+        width:100%;  
+    }
+
+    #flexcontainer2 .item:nth-child(2) {
+        width: 100%;   
+        margin-left: 0px;
+    }
+
+    #flexcontainer2 .item input:nth-child(2){
+        width: 50%;
+    }
+    #flexcontainer2 #username{
+        width: 87%;
+    }
+    
+  
+}
+
+
+
+
