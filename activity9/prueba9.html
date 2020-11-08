@@ -7,22 +7,22 @@
 
     <title>Activity 9: Responsive images</title>
     <style>
-     .segundo{
-      background-image: url(img/arbol3.jpg);
-      background-repeat: no-repeat;
-      height: 400px;
-     }
-
+      .segundo{
+       background-image: url(img/arbol3.jpg);
+       background-repeat: no-repeat;
+        height: 400px;
+       }
+      
      @media only screen and (min-width:600px) {
-      
-      .segundo{
-        background-image: url(img/arbol2.jpg);
+        .segundo{
+         background-image: url(img/arbol2.jpg);
+        }
       }
+
      @media only screen and (min-width:1000px) {
-      
-      .segundo{
-        background-image: url(img/arbol.jpg);
-      }
+        .segundo{
+         background-image: url(img/arbol.jpg);
+       }
       }
 
     </style>
@@ -49,13 +49,14 @@
         </picture>
       </div>
      
-	TERCERA MANERA
-<picture>
-    <source srcset="img/arbol3.png" media="(max-width: 600px)">
-    <source srcset="img/arbol2.png" media="(max-width: 1000px)">
-    <img srcset="img/arbol.png" alt="My default image">
-</picture>
-
+      <div>
+        <p>TERCER INTENTO</p>
+        <picture>
+            <source srcset="img/arbol3.png" media="(max-width: 600px)">
+            <source srcset="img/arbol2.png" media="(max-width: 1000px)">
+            <img srcset="img/arbol.png" alt="My default image">
+        </picture>
+     </div>
     <p>2. Using &lt;picture&gt; stuff make a responsive image that changes depending on the size of the page, up to 3 images.:</p>
     <!-- 2nd activity here-->
     <div class="segundo">
