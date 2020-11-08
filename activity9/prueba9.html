@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Activity 9: Responsive images</title>
+    <style>
+     .segundo{
+      background-image: url(img/arbol3.jpg);
+      background-repeat: no-repeat;
+      height: 400px;
+     }
+
+     @media only screen and (min-width:600px) {
+      
+      .segundo{
+        background-image: url(img/arbol2.jpg);
+      }
+     @media only screen and (min-width:1000px) {
+      
+      .segundo{
+        background-image: url(img/arbol.jpg);
+      }
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Activity 9: Responsive images</h1>
+    <p>1. Using &lt;img srcset...&gt; make a responsive image that changes depending on the size of the page, up to 3 images.:</p>
+    <!-- 1st activity here-->
+      <img 
+        srcset="img/arbol.jpg 1x,
+        img/arbol2.jpg 2x,
+        img/arbol3.jpg 3x
+        "
+        src="img/arbol.jpg" 
+        alt="arbol">
+        
+      <div>
+        <P>OTRA FORMA DE HACER</P>
+        <picture>
+          <source media="(max-widht:1200px)" srcset="img/arbol.jpg">
+          <source media="(max-widht:700px )" srcset="img/arbol2.jpg">
+          <source media="(max-widht:500px)" srcset="img/arbol3.jpg">
+          <img src="img/arbol.jpg" alt="arbol">    
+        </picture>
+      </div>
+     
+	TERCERA MANERA
+<picture>
+    <source srcset="img/arbol3.png" media="(max-width: 600px)">
+    <source srcset="img/arbol2.png" media="(max-width: 1000px)">
+    <img srcset="img/arbol.png" alt="My default image">
+</picture>
+
+    <p>2. Using &lt;picture&gt; stuff make a responsive image that changes depending on the size of the page, up to 3 images.:</p>
+    <!-- 2nd activity here-->
+    <div class="segundo">
+      
+    </div>
+
+    <p><a href="https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images">Need help?</a><a href="https://www.youtube.com/watch?v=7UMNQrUF2ps">Video</a></p>
+  </body>
+</html>
